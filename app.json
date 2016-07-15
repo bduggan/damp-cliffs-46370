@@ -1,7 +1,6 @@
 {
   "name": "damp-cliffs-46370",
-  "scripts": {
-  },
+  "scripts": { },
   "env": {
     "LD_LIBRARY_PATH": {
       "required": true
