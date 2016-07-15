@@ -1,0 +1,35 @@
+{
+  "name": "damp-cliffs-46370",
+  "scripts": {
+  },
+  "env": {
+    "LD_LIBRARY_PATH": {
+      "required": true
+    },
+    "LUA_CPATH": {
+      "required": true
+    },
+    "LUA_PATH": {
+      "required": true
+    },
+    "PATH": {
+      "required": true
+    },
+    "STACK": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "http://github.com/leafo/heroku-buildpack-lua.git"
+    }
+  ]
+}
