@@ -1,0 +1,15 @@
+worker_processes  1;
+error_log logs/error.log;
+daemon off;
+events {
+    worker_connections 1024;
+}
+http {
+    server {
+        listen 1234;
+        location / {
+            default_type text/html;
+            content_by_lua_file 'hello.lua';
+        }
+    }
+}
