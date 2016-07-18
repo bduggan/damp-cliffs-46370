@@ -21,4 +21,4 @@ install:
                   # in the root of the repository.
 
 script:
-  - busted
+  - busted test
