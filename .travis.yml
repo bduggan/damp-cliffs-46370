@@ -1,5 +1,7 @@
 env:
   PORT=1234
+
 language: perl
-before_test: ./start-test-server.sh
+
+before_script: ./start-test-server.sh
 
