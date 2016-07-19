@@ -14,7 +14,7 @@ http {
     uwsgi_temp_path temp/uwsgi;
 
     server {
-        listen ${{PORT}};
+        listen 1234;
         location / {
             default_type text/html;
             content_by_lua_file 'hello.lua';
