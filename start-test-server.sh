@@ -1,9 +1,9 @@
 #!/bin/sh -ex
 
-PATH=/usr/local/openresty/nginx/sbin:$PATH
+PATH=$HOME/openresty/nginx/sbin/:/usr/local/openresty/nginx/sbin:$PATH
 PORT=${PORT:-1234}
 conf=nginx.conf.compiled
-PORT=$PORT perl -lpe 's/\$\{\{PORT\}\}/$ENV{PORT}/' nginx.conf > $conf
+perl -lpe 's/\$\{\{PORT\}\}/$ENV{PORT}/' nginx.conf > $conf
 
 mkdir -p logs
 mkdir -p temp
