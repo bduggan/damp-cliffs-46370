@@ -3,5 +3,5 @@ env:
 
 language: perl
 
-before_script: ./start-test-server.sh
+before_script: ./build.sh && ./start-test-server.sh
 
