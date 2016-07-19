@@ -1,6 +1,5 @@
 #!/bin/sh -ex
 
-PATH=$HOME/openresty/nginx/sbin/:/usr/local/openresty/nginx/sbin:$PATH
 PORT=${PORT:-1234}
 conf=nginx.conf.compiled
 perl -lpe 's/\$\{\{PORT\}\}/$ENV{PORT}/' nginx.conf > $conf
